@@ -16,9 +16,9 @@
         Title="Вход" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="200*"/>
             <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -26,5 +26,10 @@
             <RowDefinition Height="200*"/>
             <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Окно регистрации" TextAlignment="Center" FontFamily="Arial"/>
+
+            <TextBox Name="newLoginTextBox"></TextBox>
+        </StackPanel>
     </Grid>
 </Window>

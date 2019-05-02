@@ -54,5 +54,11 @@ namespace SecurityApp
                 }
             }
         }
+
+        private void signUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            Authentification authentification = new Authentification();
+            authentification.Show();
+        }
     }
 }

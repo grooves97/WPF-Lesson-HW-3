@@ -17,11 +17,6 @@ namespace SecurityApp.DataAcces
                 Login = "admin",
                 Password = CryptoService.HashPassword("123")
             });
-            context.Users.Add(new Models.User
-            {
-                Login = "Aslan",
-                Password = CryptoService.HashPassword("wasd")
-            });
             base.Seed(context);
         }
     }

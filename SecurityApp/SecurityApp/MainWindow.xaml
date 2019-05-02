@@ -11,28 +11,51 @@
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
-     Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Вход" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+        Title="Вход" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" Background="#FFEDE7F6">
+    <Window.Foreground>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFD31313" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Foreground>
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
+    <Window.Effect>
+        <DropShadowEffect Color="#FF2B2B2B"/>
+    </Window.Effect>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>
             <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="200*"/>
         </Grid.ColumnDefinitions>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="100*"/>
-            <RowDefinition Height="100*"/>
+            <RowDefinition Height="150*"/>
             <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
-            <TextBlock Text="Логин:" TextAlignment="Center"/>
+            <TextBlock Text="Логин:" TextAlignment="Center" FontFamily="Arial"/>
             <TextBox Name="loginTextBox" Margin="0 0 0 10"></TextBox>
-            <TextBlock Text="Пароль:" TextAlignment="Center"/>
+            <TextBlock Text="Пароль:" TextAlignment="Center" FontFamily="Arial"/>
             <PasswordBox Name="passwordBox" Margin=" 0 0 0 10"></PasswordBox>
-            <Button Name="signInButon" Content="Войти" Click="SignInButonClick"/>
+            <Button Name="signInButon" Content="Войти" Click="SignInButonClick" Margin="0 0 0 10">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="7" ShadowDepth="7" Color="#FFD6D5D5"/>
+                </Button.Effect>
+            </Button>
+            <Button Name="signUpButton" Content="Регистрация" Click="signUpButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="7" ShadowDepth="7" Color="#FFD6D5D5"/>
+                </Button.Effect>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
