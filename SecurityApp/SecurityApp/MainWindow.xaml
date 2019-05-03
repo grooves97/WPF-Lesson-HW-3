@@ -12,7 +12,7 @@
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
      FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Вход" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" Background="#FFEDE7F6">
+        Title="Вход" Height="450" Width="800" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" Background="#FFE3F2FD">
     <Window.Foreground>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="0"/>
