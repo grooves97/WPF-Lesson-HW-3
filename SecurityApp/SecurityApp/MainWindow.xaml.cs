@@ -53,6 +53,8 @@ namespace SecurityApp
                     MessageBox.Show("Успешный ввод");
                 }
             }
+            loginTextBox.Clear();
+            passwordBox.Clear();
         }
 
         private void signUpButton_Click(object sender, RoutedEventArgs e)

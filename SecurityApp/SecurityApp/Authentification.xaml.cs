@@ -55,9 +55,9 @@ namespace SecurityApp
             {
                 context.Users.Add(user);
                 context.SaveChanges();
+                MessageBox.Show("Успешно зарегался Чувак!");
             }
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            this.Close();
         }
     }
 }

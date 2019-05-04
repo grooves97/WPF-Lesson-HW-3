@@ -52,7 +52,7 @@
                     </LinearGradientBrush>
                 </TextBlock.Foreground></TextBlock>
             <PasswordBox Name="confirmPasswordBox" Margin="0 0 0 10"></PasswordBox>
-            <Button Name="Register" Content="Зарегистрировать" Click="Register_Click" FontFamily="Arial" Background="#FFE8E6E6">
+            <Button Name="Register" Content="Зарегистрировать" Click="Register_Click" FontFamily="Arial" Background="#FFE8E6E6" Foreground="#DD020202">
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="7" ShadowDepth="7" Color="#FFE6E4E4"/>
                 </Button.Effect>
